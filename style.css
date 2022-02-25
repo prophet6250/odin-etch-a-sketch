@@ -46,3 +46,23 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.main {
+  margin: 50px;
+}
+
+.col {
+  width: 15px;
+  height: 15px;
+  /* testing */
+  border: 1px solid black;
+}
+
+.row {
+  width: auto;
+  display: flex;
+}
+
+div.col:hover {
+  background-color: blue;
+}
