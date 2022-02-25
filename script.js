@@ -14,7 +14,17 @@ const createMatrix = (size = 16) => {
     
     mainDiv.appendChild(row);
   }
+};
 
-}
+const hoverFillAll = () => {
+  const cols = document.querySelectorAll('.col');
+
+  for (let col of cols) {
+    col.addEventListener('mouseenter', (event) => {
+      event.target.style['background-color'] = 'magenta';
+    })
+  }
+};
 
 createMatrix();
+hoverFillAll();
