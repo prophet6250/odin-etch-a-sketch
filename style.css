@@ -46,23 +46,48 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-.main {
-  margin: 50px;
+a{
+  text-decoration: none;
 }
 
-.col {
-  width: 15px;
-  height: 15px;
-  /* testing */
+.main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.left {
+  margin: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20%
+}
+
+#title {
+  font-size: 250%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#reset-button, #size-button {
+  height: 10%;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  font-size: 150%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  border: 3px greenyellow solid;
+  padding: 15px 30px;
+  border-radius: 20px;
+  align-self: center;
+}
+
+.right {
+  margin: 50px 100px;
+}
+.grid {
+  width: 800px;
+  height: 800px;
   border: 1px solid black;
 }
 
-.row {
-  width: auto;
-  display: flex;
-}
-
-.fill {
-  background-color: black;
-}
